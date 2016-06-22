@@ -34,7 +34,6 @@ public class Main extends ListActivity {
         context = getBaseContext();
         populate();
         listView = getListView();
-        registerReceiver(new BootReceiverSoundMan(), new IntentFilter(Intent.ACTION_BOOT_COMPLETED));
         SwipeDismissListViewTouchListener touchlistener = new SwipeDismissListViewTouchListener(listView,
      		   new SwipeDismissListViewTouchListener.DismissCallbacks() {
  				@Override

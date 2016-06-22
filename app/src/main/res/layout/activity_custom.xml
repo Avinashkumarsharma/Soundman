@@ -1,0 +1,107 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom = "http://schemas.android.com/apk/res/com.blackbox.soundman"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     tools:context="com.blackbox.soundman.Custom" >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/zero"
+    android:orientation="vertical"
+    android:background="@color/white_secondary"
+   
+    >
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp" 
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <TextView
+            android:id="@+id/vibrate_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vibrate"
+            android:layout_centerVertical="true"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:visibility="gone"
+            />
+
+        <CheckBox
+            android:id="@+id/vibrate_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="36dp"
+            android:layout_centerVertical="true"
+            android:paddingTop="15dp" 
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+    <com.blackbox.soundman.SeekbarWithLabel
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        custom:titleText="Music" 
+        android:id="@+id/music"
+        custom:stream = "music"/>
+    
+    <com.blackbox.soundman.SeekbarWithLabel
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        custom:titleText="Ring/Notification" 
+        android:id="@+id/ring"
+        custom:stream = "ring"/>
+    
+    <com.blackbox.soundman.SeekbarWithLabel
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        custom:titleText = "Alarm"
+        android:id="@+id/alarm"
+        
+        custom:stream = "alarm"/>
+    
+    <com.blackbox.soundman.SeekbarWithLabel
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        custom:titleText = "Touch"
+        android:id="@+id/touch"
+        custom:sound = "@raw/beep"
+        custom:stream = "touch"/>
+    
+    <com.blackbox.soundman.SeekbarWithLabel
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        custom:titleText = "Voice calls"
+        android:id="@+id/voice"
+        custom:stream = "touch"/>
+    
+    <com.blackbox.soundman.SeekbarWithLabel
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        custom:titleText = "System"
+        android:id="@+id/system"
+        android:visibility = "gone"
+        custom:stream = "system"
+        />
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/ads">
+    </com.google.android.gms.ads.AdView>
+        
+
+</LinearLayout>
+</ScrollView>

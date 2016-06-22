@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="profile_type">
+        <item >Normal</item>
+        <item >Vibrate</item>
+        <item >Silent</item>
+        <item >Custom</item>
+    </string-array>
+    <string-array name="repeat_interval">
+        <item >No Repeat</item>
+        <item >Every Day</item>
+        <item >Every Week</item>
+        <item >Sunday</item>
+        <item >Monday</item>
+        <item >Tuesday</item>
+        <item >Wednesday</item>
+        <item >Thrusday</item>
+        <item >Friday</item>
+        <item >Saturday</item>
+    </string-array>
+</resources>

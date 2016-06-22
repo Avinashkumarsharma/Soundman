@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="100dp"
+    android:background="@color/white" 
+    >
+
+    <ImageView
+        android:id="@+id/profile_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" 
+       />
+    <TextView
+        android:id="@+id/starts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ends"
+        android:layout_alignTop="@+id/profile_icon"
+        android:text="@string/starts"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/slate"
+        android:layout_marginRight="10dp"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/starts"
+        android:layout_toRightOf="@+id/starts"
+        android:text="12:00"
+        android:textSize="18sp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/dark_grey" />
+
+    <TextView
+        android:id="@+id/ends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/end_time"
+        android:layout_toRightOf="@+id/profile_icon"
+        android:layout_marginBottom="8dp"
+        android:text="@string/ends"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="12sp" 
+        android:textColor="@color/slate"/>
+
+    <ImageView
+        android:id="@+id/state"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignBottom="@+id/start_time"
+        android:layout_marginRight="27dp"
+        android:layout_toLeftOf="@+id/edit_schedule"
+         />
+
+    <ImageView
+        android:id="@+id/edit_schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/state"
+        android:layout_marginRight="13dp"
+        android:background="@android:drawable/ic_menu_edit" />
+
+    <TextView
+        android:id="@+id/end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/starts"
+        android:layout_toRightOf="@+id/starts"
+        android:text="12:00"
+        android:textColor="@color/dark_grey"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/profile_icon"
+        android:layout_alignRight="@+id/edit_schedule"
+        android:text="custom"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/secondary_text_dark_nodisable" />
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/profile"
+        android:layout_alignLeft="@+id/ends"
+        android:text="Untitled"
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+        android:textColor="@color/secondary_text"/>
+
+    <TextView
+        android:id="@+id/repeat_every"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/profile_icon"
+        android:layout_toRightOf="@+id/profile_icon"
+        android:text="No Repeat"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/secondary_text_dark_nodisable" />
+
+</RelativeLayout>

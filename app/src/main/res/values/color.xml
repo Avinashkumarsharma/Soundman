@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name = "grey">#cccccc</color>
+    <color name = "light_grey">#aaaaaa</color>
+    <color name = "green">#9eee10</color>
+    <color name = "blue">#00609c</color>
+    <color name = "red">#f6302b</color>
+    <color name = "pink_red">#f53562</color>
+    <color name ="orange">#e65400</color>
+    <color name = "dark_grey">#292727</color>
+    <color name = "white">#ffffff</color>
+    <color name = "black">#000000</color>
+    <color name = "almost_black">#1e1e1e</color>
+    <color name = "secondary_text">#949493</color>
+    <color name="slate">#b8b4ad</color>
+    <color name = "cream">#faefdb</color>
+    <color name = "white_secondary">#f4f4f4</color>
+    <color name = "inactive">#aeaead</color>
+    <color name = "darkgreen">#35e727</color>
+</resources>
